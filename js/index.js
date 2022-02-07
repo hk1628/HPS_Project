@@ -134,10 +134,7 @@ newTaskForm.addEventListener('submit', (event) => {
         // taskDueDate is in yyyy-mm-dd format
         let taskDueDate = validateDueDate.value.split("-");
   
-  function isNotEmpty(value) {
-      return value !== "" && value !== null && value !== undefined;
-      }
-
+  
   // Form validation for Task Name Field for min length 5
   if ((validateName.value.length > 5) && (validateName.value !==null && validateName.value !=="")) {
     validateName.classList.add("is-valid");
